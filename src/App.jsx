@@ -268,7 +268,7 @@ function App() {
             </div>
           </div>
 
-          <div className="w-full h-[900px] flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-gray-900">
+          <div className="w-full h-[900px] flex items-center justify-center bg-gradient-to-b from-black via-gray-900 to-gray-900">
             <div className="cntnr flex text-white w-full h-[80%] ">
               <div className="limg relative w-1/2 h-full overflow-hidden">
                 <img
@@ -295,7 +295,7 @@ function App() {
           </div>
 
           {/* Enhanced Info Section with Timeline Design */}
-          <div className="info-section relative w-full min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 py-16 px-10">
+          <div className="info-section relative w-full min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-900 py-16 px-10">
             <div className="container mx-auto relative z-10">
               <h2 className="info-title text-white text-7xl text-center mb-20 relative">
                 Game Features
