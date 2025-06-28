@@ -24,11 +24,6 @@ Explore the world of GTA VI through cinematic visuals, interactive sections, and
 
 ---
 
-## 📌 About This Site
-
-This is a fan-made website for **GTA VI**, designed to showcase the trailer, characters, and visuals in a clean, interactive layout — offering fans an immersive glimpse of what’s coming.
-
----
 
 ## 📞 Contact
 
