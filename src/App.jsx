@@ -135,6 +135,45 @@ function App() {
       }
     );
 
+    // Video section animations
+    gsap.fromTo(
+      ".video-title",
+      {
+        opacity: 0,
+        y: 30,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "Power2.easeOut",
+        scrollTrigger: {
+          trigger: ".video-section",
+          start: "top 70%",
+          toggleActions: "play none none none",
+        },
+      }
+    );
+
+    gsap.fromTo(
+      ".video-container",
+      {
+        opacity: 0,
+        scale: 0.9,
+      },
+      {
+        opacity: 1,
+        scale: 1,
+        duration: 1.2,
+        ease: "Power2.easeOut",
+        scrollTrigger: {
+          trigger: ".video-section",
+          start: "top 60%",
+          toggleActions: "play none none none",
+        },
+      }
+    );
+
     // Simple coming soon animation
     gsap.to(".glitch-text", {
       x: "random(-1, 1)",
@@ -363,7 +402,7 @@ function App() {
                 <div className="info-card inline-block relative bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-500 p-1 rounded-2xl overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-500 animate-pulse"></div>
                   <div className="relative bg-black px-12 py-6 rounded-2xl">
-                    <p className="text-white text-2xl font-[Helvetica_Now_Display]">
+                    <p className="text-white text-2xl">
                       <span className="text-yellow-500 font-black text-2xl">
                         COMING SOON 2025
                       </span>{" "}
@@ -374,6 +413,45 @@ function App() {
                     </p>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Video Section */}
+          <div className="video-section relative w-full min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-900 py-20 px-10 flex items-center justify-center">
+            <div className="container mx-auto max-w-6xl relative z-10">
+              <h2 className="video-title text-white text-7xl text-center mb-20 relative">
+                Watch The Trailer
+                <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-48 h-1 bg-gradient-to-r from-yellow-500 to-orange-500"></div>
+              </h2>
+
+              <div className="video-container relative rounded-3xl overflow-hidden border-2 border-yellow-500/30 shadow-2xl shadow-yellow-500/20 group">
+                <video
+                  className="w-full h-[600px] object-cover transition-transform duration-500 group-hover:scale-105"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  <source src="./video1.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+
+                {/* Video overlay gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20 pointer-events-none"></div>
+
+                {/* Video title overlay */}
+                <div className="absolute bottom-8 left-8 right-8">
+                  <h3 className="text-white text-4xl mb-2">
+                    Grand Theft Auto VI
+                  </h3>
+                </div>
+              </div>
+
+              <div className="text-center mt-12">
+                <p className="text-gray-400 text-xl font-[Helvetica_Now_Display]">
+                  Experience the next generation of open-world gaming
+                </p>
               </div>
             </div>
           </div>
