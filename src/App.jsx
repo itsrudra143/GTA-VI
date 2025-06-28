@@ -406,7 +406,7 @@ function App() {
             </div>
 
             <div className="container mx-auto relative z-10">
-              <h2 className="info-title text-white text-7xl text-center mb-20 font-bold relative">
+              <h2 className="info-title text-white text-7xl text-center mb-20  relative">
                 Game Features
                 <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-yellow-500 to-orange-500"></div>
               </h2>
@@ -424,7 +424,7 @@ function App() {
                     <div className="text-yellow-500 text-6xl mb-8 transform group-hover:scale-110 transition-transform duration-300">
                       <i className="ri-map-2-line drop-shadow-lg"></i>
                     </div>
-                    <h3 className="text-white text-3xl mb-6 font-bold font-[Helvetica_Now_Display] group-hover:text-yellow-400 transition-colors duration-300">
+                    <h3 className="text-white text-3xl mb-6  font-[Helvetica_Now_Display] group-hover:text-yellow-400 transition-colors duration-300">
                       Massive Open World
                     </h3>
                     <p className="text-gray-300 leading-relaxed font-[Helvetica_Now_Display] text-lg group-hover:text-white transition-colors duration-300">
@@ -445,7 +445,7 @@ function App() {
                     <div className="text-yellow-500 text-6xl mb-8 transform group-hover:scale-110 transition-transform duration-300">
                       <i className="ri-group-line drop-shadow-lg"></i>
                     </div>
-                    <h3 className="text-white text-3xl mb-6 font-bold font-[Helvetica_Now_Display] group-hover:text-yellow-400 transition-colors duration-300">
+                    <h3 className="text-white text-3xl mb-6  font-[Helvetica_Now_Display] group-hover:text-yellow-400 transition-colors duration-300">
                       Dual Protagonists
                     </h3>
                     <p className="text-gray-300 leading-relaxed font-[Helvetica_Now_Display] text-lg group-hover:text-white transition-colors duration-300">
@@ -465,7 +465,7 @@ function App() {
                     <div className="text-yellow-500 text-6xl mb-8 transform group-hover:scale-110 transition-transform duration-300">
                       <i className="ri-car-line drop-shadow-lg"></i>
                     </div>
-                    <h3 className="text-white text-3xl mb-6 font-bold font-[Helvetica_Now_Display] group-hover:text-yellow-400 transition-colors duration-300">
+                    <h3 className="text-white text-3xl mb-6  font-[Helvetica_Now_Display] group-hover:text-yellow-400 transition-colors duration-300">
                       Enhanced Gameplay
                     </h3>
                     <p className="text-gray-300 leading-relaxed font-[Helvetica_Now_Display] text-lg group-hover:text-white transition-colors duration-300">
@@ -481,7 +481,7 @@ function App() {
                 <div className="info-card inline-block relative bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-500 p-1 rounded-2xl overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-500 animate-pulse"></div>
                   <div className="relative bg-black px-12 py-6 rounded-2xl">
-                    <p className="text-white text-2xl font-bold">
+                    <p className="text-white text-2xl ">
                       <span className="glitch-text text-yellow-500 font-black text-3xl">
                         COMING SOON 2025
                       </span>{" "}
@@ -505,7 +505,7 @@ function App() {
             </div>
 
             <div className="container mx-auto max-w-5xl relative z-10">
-              <h2 className="contact-title text-white text-7xl text-center mb-20 font-bold relative">
+              <h2 className="contact-title text-white text-7xl text-center mb-20  relative">
                 Get In Touch
                 <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-40 h-1 bg-gradient-to-r from-yellow-500 to-orange-500"></div>
               </h2>
@@ -518,7 +518,7 @@ function App() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                     <div className="form-field">
                       <label
-                        className="block text-white text-xl mb-4 font-semibold"
+                        className="block text-white text-xl mb-4 "
                         htmlFor="name"
                       >
                         Name
@@ -533,7 +533,7 @@ function App() {
 
                     <div className="form-field">
                       <label
-                        className="block text-white text-xl mb-4 font-semibold"
+                        className="block text-white text-xl mb-4 "
                         htmlFor="email"
                       >
                         Email
@@ -549,7 +549,7 @@ function App() {
 
                   <div className="form-field">
                     <label
-                      className="block text-white text-xl mb-4 font-semibold"
+                      className="block text-white text-xl mb-4 "
                       htmlFor="contact"
                     >
                       Contact Number
@@ -564,7 +564,7 @@ function App() {
 
                   <div className="form-field">
                     <label
-                      className="block text-white text-xl mb-4 font-semibold"
+                      className="block text-white text-xl mb-4 "
                       htmlFor="message"
                     >
                       Message
@@ -580,7 +580,7 @@ function App() {
                   <div className="text-center pt-6">
                     <button
                       type="submit"
-                      className="submit-btn relative bg-gradient-to-r from-yellow-500 to-orange-500 text-black font-bold px-16 py-6 rounded-2xl text-2xl hover:from-yellow-400 hover:to-orange-400 transition-all duration-300 transform hover:scale-105 shadow-2xl shadow-yellow-500/30 overflow-hidden"
+                      className="submit-btn relative bg-gradient-to-r from-yellow-500 to-orange-500 text-black  px-16 py-6 rounded-2xl text-2xl hover:from-yellow-400 hover:to-orange-400 transition-all duration-300 transform hover:scale-105 shadow-2xl shadow-yellow-500/30 overflow-hidden"
                     >
                       <span className="relative z-10">Send Message</span>
                       <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
