@@ -229,11 +229,11 @@ function App() {
             </div>
           </div>
 
-          <div className="w-full h-[900px] flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black">
+          <div className="w-full h-[900px] flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-gray-900">
             <div className="cntnr flex text-white w-full h-[80%] ">
-              <div className="limg relative w-1/2 h-full">
+              <div className="limg relative w-1/2 h-full overflow-hidden">
                 <img
-                  className="absolute scale-[1.3] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[680px] w-[600px]"
+                  className="absolute scale-[1.3] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[680px] w-[600px] transition-transform duration-500 hover:scale-[1.4]"
                   src="./imag.png"
                   alt=""
                 />
@@ -255,81 +255,120 @@ function App() {
             </div>
           </div>
 
-          {/* Simplified Info Section */}
-          <div className="info-section relative w-full min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 py-20 px-10 ">
+          {/* Enhanced Info Section with Timeline Design */}
+          <div className="info-section relative w-full min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 py-16 px-10">
             <div className="container mx-auto relative z-10">
               <h2 className="info-title text-white text-7xl text-center mb-20 relative">
                 Game Features
                 <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-yellow-500 to-orange-500"></div>
               </h2>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto">
-                <div className="info-card group relative bg-gradient-to-br from-gray-800 via-gray-900 to-black p-10 rounded-2xl border-2 border-yellow-500/30 hover:border-yellow-400 transition-all duration-500 hover:shadow-2xl hover:shadow-yellow-500/30 hover:scale-105 transform backdrop-blur-sm overflow-hidden cursor-pointer">
-                  {/* Card glow effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/5 to-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              {/* Timeline Layout */}
+              <div className="relative max-w-6xl mx-auto">
+                {/* Central timeline line */}
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-yellow-500 via-orange-500 to-yellow-500"></div>
 
-                  {/* Animated corner accents */}
-                  <div className="absolute top-0 left-0 w-8 h-8 border-l-2 border-t-2 border-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <div className="absolute bottom-0 right-0 w-8 h-8 border-r-2 border-b-2 border-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-                  <div className="relative z-10">
-                    <div className="text-yellow-500 text-6xl mb-8 transform group-hover:scale-110 transition-transform duration-300">
-                      <i className="ri-map-2-line drop-shadow-lg"></i>
+                {/* Feature 1 - Left */}
+                <div className="info-card relative flex items-center mb-20">
+                  <div className="w-1/2 pr-12 text-right">
+                    <div className="bg-gradient-to-l from-gray-800/80 to-gray-900/80 backdrop-blur-lg p-8 rounded-2xl border border-yellow-500/30 hover:border-yellow-400 transition-all duration-500 hover:shadow-2xl hover:shadow-yellow-500/20 group">
+                      <h3 className="text-yellow-500 text-4xl mb-4 group-hover:text-yellow-400 transition-colors duration-300">
+                        Massive Open World
+                      </h3>
+                      <p className="text-gray-300 text-lg leading-relaxed group-hover:text-white transition-colors duration-300">
+                        Explore the biggest and most detailed Vice City ever
+                        created. From neon-lit streets to sprawling beaches,
+                        every corner tells a story of crime and ambition.
+                      </p>
                     </div>
-                    <h3 className="text-white text-3xl mb-6  font-[Helvetica_Now_Display] group-hover:text-yellow-400 transition-colors duration-300">
-                      Massive Open World
-                    </h3>
-                    <p className="text-gray-300 leading-relaxed font-[Helvetica_Now_Display] text-lg group-hover:text-white transition-colors duration-300">
-                      Explore the biggest and most detailed Vice City ever
-                      created. From neon-lit streets to sprawling beaches, every
-                      corner tells a story.
-                    </p>
+                  </div>
+
+                  {/* Timeline dot */}
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-yellow-500 rounded-full border-4 border-black shadow-lg shadow-yellow-500/50 z-10"></div>
+
+                  <div className="w-1/2 pl-12">
+                    <div className="relative overflow-hidden rounded-2xl border border-yellow-500/30 group">
+                      <img
+                        src="./bg.png"
+                        alt="Open World"
+                        className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                      <div className="absolute top-4 left-4 text-yellow-500 text-5xl">
+                        <i className="ri-map-2-line drop-shadow-lg"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <div className="info-card group relative bg-gradient-to-br from-gray-800 via-gray-900 to-black p-10 rounded-2xl border-2 border-yellow-500/30 hover:border-yellow-400 transition-all duration-500 hover:shadow-2xl hover:shadow-yellow-500/30 hover:scale-105 transform backdrop-blur-sm overflow-hidden cursor-pointer">
-                  <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/5 to-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-                  <div className="absolute top-0 left-0 w-8 h-8 border-l-2 border-t-2 border-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <div className="absolute bottom-0 right-0 w-8 h-8 border-r-2 border-b-2 border-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-                  <div className="relative z-10">
-                    <div className="text-yellow-500 text-6xl mb-8 transform group-hover:scale-110 transition-transform duration-300">
-                      <i className="ri-group-line drop-shadow-lg"></i>
+                {/* Feature 2 - Right */}
+                <div className="info-card relative flex items-center mb-20">
+                  <div className="w-1/2 pr-12">
+                    <div className="relative overflow-hidden rounded-2xl border border-yellow-500/30 group">
+                      <img
+                        src="./girlbg.png"
+                        alt="Dual Protagonists"
+                        className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                      <div className="absolute top-4 right-4 text-yellow-500 text-5xl">
+                        <i className="ri-group-line drop-shadow-lg"></i>
+                      </div>
                     </div>
-                    <h3 className="text-white text-3xl mb-6  font-[Helvetica_Now_Display] group-hover:text-yellow-400 transition-colors duration-300">
-                      Dual Protagonists
-                    </h3>
-                    <p className="text-gray-300 leading-relaxed font-[Helvetica_Now_Display] text-lg group-hover:text-white transition-colors duration-300">
-                      Play as Lucia and Jason in an epic story of crime, love,
-                      and survival in the criminal underworld of Vice City.
-                    </p>
+                  </div>
+
+                  {/* Timeline dot */}
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-orange-500 rounded-full border-4 border-black shadow-lg shadow-orange-500/50 z-10"></div>
+
+                  <div className="w-1/2 pl-12 text-left">
+                    <div className="bg-gradient-to-r from-gray-800/80 to-gray-900/80 backdrop-blur-lg p-8 rounded-2xl border border-yellow-500/30 hover:border-yellow-400 transition-all duration-500 hover:shadow-2xl hover:shadow-orange-500/20 group">
+                      <h3 className="text-orange-500 text-4xl mb-4 group-hover:text-orange-400 transition-colors duration-300">
+                        Dual Protagonists
+                      </h3>
+                      <p className="text-gray-300 text-lg leading-relaxed group-hover:text-white transition-colors duration-300">
+                        Play as Lucia and Jason in an epic story of crime, love,
+                        and survival in the criminal underworld of Vice City's
+                        dangerous streets.
+                      </p>
+                    </div>
                   </div>
                 </div>
 
-                <div className="info-card group relative bg-gradient-to-br from-gray-800 via-gray-900 to-black p-10 rounded-2xl border-2 border-yellow-500/30 hover:border-yellow-400 transition-all duration-500 hover:shadow-2xl hover:shadow-yellow-500/30 hover:scale-105 transform backdrop-blur-sm overflow-hidden cursor-pointer">
-                  <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/5 to-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-                  <div className="absolute top-0 left-0 w-8 h-8 border-l-2 border-t-2 border-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <div className="absolute bottom-0 right-0 w-8 h-8 border-r-2 border-b-2 border-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-                  <div className="relative z-10">
-                    <div className="text-yellow-500 text-6xl mb-8 transform group-hover:scale-110 transition-transform duration-300">
-                      <i className="ri-car-line drop-shadow-lg"></i>
+                {/* Feature 3 - Left */}
+                <div className="info-card relative flex items-center mb-20">
+                  <div className="w-1/2 pr-12 text-right">
+                    <div className="bg-gradient-to-l from-gray-800/80 to-gray-900/80 backdrop-blur-lg p-8 rounded-2xl border border-yellow-500/30 hover:border-yellow-400 transition-all duration-500 hover:shadow-2xl hover:shadow-yellow-500/20 group">
+                      <h3 className="text-yellow-500 text-4xl mb-4 group-hover:text-yellow-400 transition-colors duration-300">
+                        Enhanced Gameplay
+                      </h3>
+                      <p className="text-gray-300 text-lg leading-relaxed group-hover:text-white transition-colors duration-300">
+                        Experience next-gen graphics, realistic physics, and
+                        dynamic weather systems that bring Vice City to life
+                        like never before.
+                      </p>
                     </div>
-                    <h3 className="text-white text-3xl mb-6  font-[Helvetica_Now_Display] group-hover:text-yellow-400 transition-colors duration-300">
-                      Enhanced Gameplay
-                    </h3>
-                    <p className="text-gray-300 leading-relaxed font-[Helvetica_Now_Display] text-lg group-hover:text-white transition-colors duration-300">
-                      Experience next-gen graphics, realistic physics, and
-                      dynamic weather systems that bring Vice City to life like
-                      never before.
-                    </p>
+                  </div>
+
+                  {/* Timeline dot */}
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-yellow-500 rounded-full border-4 border-black shadow-lg shadow-yellow-500/50 z-10"></div>
+
+                  <div className="w-1/2 pl-12">
+                    <div className="relative overflow-hidden rounded-2xl border border-yellow-500/30 group">
+                      <img
+                        src="./sky.png"
+                        alt="Enhanced Gameplay"
+                        className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                      <div className="absolute top-4 left-4 text-yellow-500 text-5xl">
+                        <i className="ri-car-line drop-shadow-lg"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="text-center mt-20">
+              <div className="text-center mt-12">
                 <div className="info-card inline-block relative bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-500 p-1 rounded-2xl overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-500 animate-pulse"></div>
                   <div className="relative bg-black px-12 py-6 rounded-2xl">
@@ -348,8 +387,8 @@ function App() {
             </div>
           </div>
 
-          {/* Simplified Contact Section */}
-          <div className="contact-section relative w-full min-h-screen bg-gradient-to-b from-black via-gray-900 to-black py-20 px-10">
+          {/* Contact Section */}
+          <div className="contact-section relative w-full min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-900 py-20 px-10">
             <div className="container mx-auto max-w-5xl relative z-10">
               <h2 className="text-white text-7xl text-center mb-20 relative">
                 Get In Touch
@@ -435,7 +474,7 @@ function App() {
           </div>
 
           {/* Footer */}
-          <footer className="w-full bg-gray-900 border-t border-gray-700 py-8">
+          <footer className="w-full bg-gradient-to-b from-gray-900 to-black border-t border-gray-700 py-8">
             <div className="container mx-auto px-10">
               <div className="flex flex-col md:flex-row justify-between items-center">
                 <div className="flex items-center gap-4 mb-4 md:mb-0">
