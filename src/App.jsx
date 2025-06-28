@@ -93,7 +93,7 @@ function App() {
 
   return (
     <>
-      <div className="svg flex items-center justify-center fixed top-0 left-0 z-[100] w-full h-full overflow-hidden bg-[#000]">
+      <div className="svg flex items-center justify-center fixed top-0 left-0 z-[100] w-full h-screen overflow-hidden bg-[#000]">
         <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
           <defs>
             <mask id="viMask">
@@ -150,12 +150,12 @@ function App() {
                 alt=""
               />
               <div className="text text-white flex flex-col gap-3 absolute top-20 left-1/2 -translate-x-1/2 scale-[1.4] rotate-[-10deg]">
-                <h1 className="text-[9rem] leading-none -ml-40">grand</h1>
-                <h1 className="text-[9rem] leading-none ml-10">theft</h1>
-                <h1 className="text-[9rem] leading-none -ml-40">auto</h1>
+                <h1 className="text-[12rem] leading-none -ml-40">grand</h1>
+                <h1 className="text-[12rem] leading-none ml-20">theft</h1>
+                <h1 className="text-[12rem] leading-none -ml-40">auto</h1>
               </div>
               <img
-                className="absolute character -bottom-[150%] left-2/3 -translate-x-1/2  scale-[3] rotate-[-20deg] w-[385px] h-[600px]"
+                className="absolute character -bottom-[150%] left-1/2 -translate-x-1/2  scale-[3] rotate-[-20deg]"
                 src="./girlbg.png"
                 alt=""
               />
