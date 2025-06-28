@@ -365,7 +365,7 @@ function App() {
             </div>
           </div>
 
-          <div className="w-full h-[900px] flex items-center justify-center bg-black">
+          <div className="w-full h-[900px] flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black">
             <div className="cntnr flex text-white w-full h-[80%] ">
               <div className="limg relative w-1/2 h-full">
                 <img
