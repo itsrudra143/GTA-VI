@@ -426,7 +426,7 @@ function App() {
                   <div className="text-center">
                     <button
                       type="submit"
-                      className="bg-gradient-to-r from-yellow-500 to-orange-500 text-black  px-10 py-4 rounded-lg text-xl hover:from-yellow-400 hover:to-orange-400 transition-all duration-300 transform hover:scale-105"
+                      className="bg-gradient-to-r from-yellow-500 to-orange-500 text-black font-bold px-10 py-4 rounded-lg text-xl hover:from-yellow-400 hover:to-orange-400 transition-all duration-300 transform hover:scale-105"
                     >
                       Send Message
                     </button>
