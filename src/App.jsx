@@ -174,11 +174,11 @@ function App() {
               />
             </div>
           </div>
-          <div className="w-full h-screen flex items-center justify-center bg-black">
+          <div className="w-full h-[1000px] flex items-center justify-center bg-black">
             <div className="cntnr flex text-white w-full h-[80%] ">
               <div className="limg relative w-1/2 h-full">
                 <img
-                  className="absolute scale-[1.3] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                  className="absolute scale-[1.3] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[800px] w-[600px]"
                   src="./imag.png"
                   alt=""
                 />
@@ -192,21 +192,8 @@ function App() {
                   a architecto eveniet saepe, ducimus necessitatibus at
                   voluptate.
                 </p>
-                <p className="mt-3 text-xl font-[Helvetica_Now_Display]">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                  eius illum fugit eligendi nesciunt quia similique velit
-                  excepturi soluta tenetur illo repellat consectetur laborum
-                  eveniet eaque, dicta, hic quisquam? Ex cupiditate ipsa nostrum
-                  autem sapiente.
-                </p>
-                <p className="mt-10 text-xl font-[Helvetica_Now_Display]">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                  eius illum fugit eligendi nesciunt quia similique velit
-                  excepturi soluta tenetur illo repellat consectetur laborum
-                  eveniet eaque, dicta, hic quisquam? Ex cupiditate ipsa nostrum
-                  autem sapiente.
-                </p>
-                <button className="bg-yellow-500 px-10 py-10 text-black mt-10 text-4xl">
+
+                <button className="bg-yellow-500 px-5 py-5 text-black mt-10 text-2xl">
                   Download Now
                 </button>
               </div>
