@@ -299,10 +299,10 @@ function App() {
                   <div className="text-yellow-500 text-5xl mb-6">
                     <i className="ri-map-2-line"></i>
                   </div>
-                  <h3 className="text-white text-2xl mb-4">
+                  <h3 className="text-white text-2xl mb-4 font-[Helvetica_Now_Display]">
                     Massive Open World
                   </h3>
-                  <p className="text-gray-300 leading-relaxed">
+                  <p className="text-gray-300 leading-relaxed font-[Helvetica_Now_Display]">
                     Explore the biggest and most detailed Vice City ever
                     created. From neon-lit streets to sprawling beaches, every
                     corner tells a story.
@@ -313,10 +313,10 @@ function App() {
                   <div className="text-yellow-500 text-5xl mb-6">
                     <i className="ri-group-line"></i>
                   </div>
-                  <h3 className="text-white text-2xl mb-4">
+                  <h3 className="text-white text-2xl mb-4 font-[Helvetica_Now_Display]">
                     Dual Protagonists
                   </h3>
-                  <p className="text-gray-300 leading-relaxed">
+                  <p className="text-gray-300 leading-relaxed font-[Helvetica_Now_Display]">
                     Play as Lucia and Jason in an epic story of crime, love, and
                     survival in the criminal underworld of Vice City.
                   </p>
@@ -326,10 +326,10 @@ function App() {
                   <div className="text-yellow-500 text-5xl mb-6">
                     <i className="ri-car-line"></i>
                   </div>
-                  <h3 className="text-white text-2xl mb-4">
+                  <h3 className="text-white text-2xl mb-4 font-[Helvetica_Now_Display]">
                     Enhanced Gameplay
                   </h3>
-                  <p className="text-gray-300 leading-relaxed">
+                  <p className="text-gray-300 leading-relaxed font-[Helvetica_Now_Display]">
                     Experience next-gen graphics, realistic physics, and dynamic
                     weather systems that bring Vice City to life like never
                     before.
@@ -341,9 +341,7 @@ function App() {
                 <div className="info-card inline-block bg-gradient-to-r from-yellow-500 to-orange-500 p-1 rounded-lg">
                   <div className="bg-black px-8 py-4 rounded-lg">
                     <p className="text-white text-xl">
-                      <span className="text-yellow-500">
-                        Coming Soon 2025
-                      </span>{" "}
+                      <span className="text-yellow-500">Coming Soon 2025</span>{" "}
                       - Pre-order now for exclusive content!
                     </p>
                   </div>
@@ -359,7 +357,7 @@ function App() {
                 Get In Touch
               </h2>
 
-              <div className="contact-form bg-gray-900 p-10 rounded-2xl border border-gray-700">
+              <div className="contact-form bg-gray-900 p-10 rounded-2xl border border-gray-700 font-[Helvetica_Now_Display] ">
                 <form className="space-y-8">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
@@ -449,7 +447,7 @@ function App() {
                   <h3 className="text-2xl text-white">Rockstar Games</h3>
                 </div>
 
-                <div className="text-center">
+                <div className="text-center font-[Helvetica_Now_Display]">
                   <p className="text-gray-400 text-lg">
                     Made with ❤️ by{" "}
                     <span className="text-yellow-500">Rudrakshi</span>
