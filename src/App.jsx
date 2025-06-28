@@ -94,195 +94,59 @@ function App() {
       });
     });
 
-    // Enhanced animations for info section
-    // Title entrance with typewriter effect
+    // Simplified info section animations - just fade in once
     gsap.fromTo(
       ".info-title",
       {
-        x: -200,
         opacity: 0,
-        rotateX: 90,
+        y: 30,
       },
       {
-        x: 0,
         opacity: 1,
-        rotateX: 0,
-        duration: 2,
-        ease: "Power4.easeOut",
+        y: 0,
+        duration: 1,
+        ease: "Power2.easeOut",
         scrollTrigger: {
           trigger: ".info-section",
           start: "top 70%",
-          toggleActions: "play none none reverse",
+          toggleActions: "play none none none",
         },
       }
     );
 
-    // Cards entrance with 3D flip
+    // Simple card entrance animation
     gsap.fromTo(
       ".info-card",
       {
-        y: 150,
         opacity: 0,
-        rotateY: 180,
-        scale: 0.5,
+        y: 50,
       },
       {
-        y: 0,
         opacity: 1,
-        rotateY: 0,
-        scale: 1,
-        duration: 1.5,
-        ease: "Back.easeOut.config(1.7)",
-        stagger: 0.3,
+        y: 0,
+        duration: 0.8,
+        ease: "Power2.easeOut",
+        stagger: 0.2,
         scrollTrigger: {
           trigger: ".info-section",
           start: "top 60%",
-          end: "bottom 20%",
-          toggleActions: "play none none reverse",
+          toggleActions: "play none none none",
         },
       }
     );
 
-    // Floating animation for cards
-    gsap.to(".info-card", {
-      y: -10,
-      duration: 2,
-      ease: "Power2.easeInOut",
-      yoyo: true,
-      repeat: -1,
-      stagger: 0.5,
-      scrollTrigger: {
-        trigger: ".info-section",
-        start: "top 50%",
-        end: "bottom 50%",
-        toggleActions: "play pause resume pause",
-      },
-    });
-
-    // Icon rotation animation
-    gsap.to(".info-card i", {
-      rotate: 360,
-      duration: 3,
-      ease: "none",
-      repeat: -1,
-      scrollTrigger: {
-        trigger: ".info-section",
-        start: "top 50%",
-        end: "bottom 50%",
-        toggleActions: "play pause resume pause",
-      },
-    });
-
-    // Glitch effect for coming soon
+    // Simple coming soon animation
     gsap.to(".glitch-text", {
-      x: "random(-2, 2)",
-      duration: 0.1,
+      x: "random(-1, 1)",
+      duration: 0.2,
       ease: "none",
       repeat: -1,
       yoyo: true,
-    });
-
-    // Parallax background elements
-    gsap.to(".bg-element-1", {
-      y: -100,
-      rotate: 45,
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".info-section",
-        start: "top bottom",
-        end: "bottom top",
-        scrub: 1,
-      },
-    });
-
-    gsap.to(".bg-element-2", {
-      y: -150,
-      rotate: -30,
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".info-section",
-        start: "top bottom",
-        end: "bottom top",
-        scrub: 1.5,
-      },
-    });
-
-    // Contact section animations
-    gsap.fromTo(
-      ".contact-title",
-      {
-        scale: 0.5,
-        opacity: 0,
-        rotateZ: -15,
-      },
-      {
-        scale: 1,
-        opacity: 1,
-        rotateZ: 0,
-        duration: 1.5,
-        ease: "Elastic.easeOut.config(1, 0.8)",
-        scrollTrigger: {
-          trigger: ".contact-section",
-          start: "top 85%",
-          toggleActions: "play none none reverse",
-        },
-      }
-    );
-
-    gsap.fromTo(
-      ".contact-form",
-      {
-        y: 100,
-        opacity: 0,
-        rotateX: 45,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        rotateX: 0,
-        duration: 1.5,
-        ease: "Power3.easeOut",
-        scrollTrigger: {
-          trigger: ".contact-section",
-          start: "top 70%",
-          toggleActions: "play none none reverse",
-        },
-      }
-    );
-
-    // Form field animations
-    gsap.fromTo(
-      ".form-field",
-      {
-        x: -50,
-        opacity: 0,
-      },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 0.8,
-        ease: "Power2.easeOut",
-        stagger: 0.1,
-        scrollTrigger: {
-          trigger: ".contact-form",
-          start: "top 80%",
-          toggleActions: "play none none reverse",
-        },
-      }
-    );
-
-    // Pulsing animation for submit button
-    gsap.to(".submit-btn", {
-      scale: 1.05,
-      duration: 1,
-      ease: "Power2.easeInOut",
-      yoyo: true,
-      repeat: -1,
     });
   }, [showContent]);
 
   return (
-    <>
+    <footer>
       <div className="svg flex items-center justify-center fixed top-0 left-0 z-[100] w-full h-screen overflow-hidden bg-[#000]">
         <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
           <defs>
@@ -391,28 +255,16 @@ function App() {
             </div>
           </div>
 
-          {/* Enhanced Info Section */}
-          <div className="info-section relative w-full min-h-screen bg-gradient-to-br from-black via-gray-900 to-black py-20 px-10 overflow-hidden">
-            {/* Animated Background Elements */}
-            <div className="bg-element-1 absolute top-20 left-20 w-32 h-32 bg-gradient-to-r from-yellow-500/10 to-orange-500/10 rounded-full blur-xl"></div>
-            <div className="bg-element-2 absolute bottom-40 right-20 w-48 h-48 bg-gradient-to-r from-yellow-500/5 to-orange-500/5 rounded-full blur-2xl"></div>
-
-            {/* Geometric patterns */}
-            <div className="absolute inset-0 opacity-5">
-              <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-yellow-500 transform rotate-45"></div>
-              <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-orange-500 rounded-full"></div>
-              <div className="absolute bottom-1/4 left-1/3 w-2 h-2 bg-yellow-500"></div>
-              <div className="absolute bottom-1/3 right-1/4 w-3 h-3 bg-orange-500 transform rotate-45"></div>
-            </div>
-
+          {/* Simplified Info Section */}
+          <div className="info-section relative w-full min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 py-20 px-10 ">
             <div className="container mx-auto relative z-10">
-              <h2 className="info-title text-white text-7xl text-center mb-20  relative">
+              <h2 className="info-title text-white text-7xl text-center mb-20 relative">
                 Game Features
                 <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-yellow-500 to-orange-500"></div>
               </h2>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto">
-                <div className="info-card group relative bg-gradient-to-br from-gray-800 via-gray-900 to-black p-10 rounded-2xl border-2 border-yellow-500/30 hover:border-yellow-400 transition-all duration-500 hover:shadow-2xl hover:shadow-yellow-500/30 backdrop-blur-sm overflow-hidden">
+                <div className="info-card group relative bg-gradient-to-br from-gray-800 via-gray-900 to-black p-10 rounded-2xl border-2 border-yellow-500/30 hover:border-yellow-400 transition-all duration-500 hover:shadow-2xl hover:shadow-yellow-500/30 hover:scale-105 transform backdrop-blur-sm overflow-hidden cursor-pointer">
                   {/* Card glow effect */}
                   <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/5 to-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
@@ -435,7 +287,7 @@ function App() {
                   </div>
                 </div>
 
-                <div className="info-card group relative bg-gradient-to-br from-gray-800 via-gray-900 to-black p-10 rounded-2xl border-2 border-yellow-500/30 hover:border-yellow-400 transition-all duration-500 hover:shadow-2xl hover:shadow-yellow-500/30 backdrop-blur-sm overflow-hidden">
+                <div className="info-card group relative bg-gradient-to-br from-gray-800 via-gray-900 to-black p-10 rounded-2xl border-2 border-yellow-500/30 hover:border-yellow-400 transition-all duration-500 hover:shadow-2xl hover:shadow-yellow-500/30 hover:scale-105 transform backdrop-blur-sm overflow-hidden cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/5 to-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                   <div className="absolute top-0 left-0 w-8 h-8 border-l-2 border-t-2 border-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -455,7 +307,7 @@ function App() {
                   </div>
                 </div>
 
-                <div className="info-card group relative bg-gradient-to-br from-gray-800 via-gray-900 to-black p-10 rounded-2xl border-2 border-yellow-500/30 hover:border-yellow-400 transition-all duration-500 hover:shadow-2xl hover:shadow-yellow-500/30 backdrop-blur-sm overflow-hidden">
+                <div className="info-card group relative bg-gradient-to-br from-gray-800 via-gray-900 to-black p-10 rounded-2xl border-2 border-yellow-500/30 hover:border-yellow-400 transition-all duration-500 hover:shadow-2xl hover:shadow-yellow-500/30 hover:scale-105 transform backdrop-blur-sm overflow-hidden cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/5 to-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                   <div className="absolute top-0 left-0 w-8 h-8 border-l-2 border-t-2 border-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -481,12 +333,12 @@ function App() {
                 <div className="info-card inline-block relative bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-500 p-1 rounded-2xl overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-500 animate-pulse"></div>
                   <div className="relative bg-black px-12 py-6 rounded-2xl">
-                    <p className="text-white text-2xl ">
-                      <span className="glitch-text text-yellow-500 font-black text-3xl">
+                    <p className="text-white text-2xl font-[Helvetica_Now_Display]">
+                      <span className="text-yellow-500 font-black text-2xl">
                         COMING SOON 2025
                       </span>{" "}
                       <br />
-                      <span className="text-lg font-normal mt-2 block">
+                      <span className="text-lg mt-2 block font-[Helvetica_Now_Display]">
                         Pre-order now for exclusive content!
                       </span>
                     </p>
@@ -496,27 +348,18 @@ function App() {
             </div>
           </div>
 
-          {/* Enhanced Contact Section */}
-          <div className="contact-section relative w-full min-h-screen bg-gradient-to-b from-black via-gray-900 to-black py-20 px-10 overflow-hidden">
-            {/* Background elements */}
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute top-1/4 left-10 w-64 h-64 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full blur-3xl"></div>
-              <div className="absolute bottom-1/4 right-10 w-80 h-80 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full blur-3xl"></div>
-            </div>
-
+          {/* Simplified Contact Section */}
+          <div className="contact-section relative w-full min-h-screen bg-gradient-to-b from-black via-gray-900 to-black py-20 px-10">
             <div className="container mx-auto max-w-5xl relative z-10">
-              <h2 className="contact-title text-white text-7xl text-center mb-20  relative">
+              <h2 className="text-white text-7xl text-center mb-20 relative">
                 Get In Touch
                 <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-40 h-1 bg-gradient-to-r from-yellow-500 to-orange-500"></div>
               </h2>
 
-              <div className="contact-form relative bg-gradient-to-br from-gray-900/80 via-gray-800/80 to-gray-900/80 backdrop-blur-lg p-12 rounded-3xl border-2 border-gray-700/50 shadow-2xl font-[Helvetica_Now_Display] overflow-hidden">
-                {/* Animated border effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/20 via-orange-500/20 to-yellow-500/20 rounded-3xl opacity-0 hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
-
+              <div className="relative bg-gradient-to-br from-gray-900/80 via-gray-800/80 to-gray-900/80 backdrop-blur-lg p-12 rounded-3xl border-2 border-gray-700/50 shadow-2xl font-[Helvetica_Now_Display] overflow-hidden">
                 <form className="space-y-10 relative z-10">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    <div className="form-field">
+                    <div>
                       <label
                         className="block text-white text-xl mb-4 "
                         htmlFor="name"
@@ -531,7 +374,7 @@ function App() {
                       />
                     </div>
 
-                    <div className="form-field">
+                    <div>
                       <label
                         className="block text-white text-xl mb-4 "
                         htmlFor="email"
@@ -547,7 +390,7 @@ function App() {
                     </div>
                   </div>
 
-                  <div className="form-field">
+                  <div>
                     <label
                       className="block text-white text-xl mb-4 "
                       htmlFor="contact"
@@ -562,7 +405,7 @@ function App() {
                     />
                   </div>
 
-                  <div className="form-field">
+                  <div>
                     <label
                       className="block text-white text-xl mb-4 "
                       htmlFor="message"
@@ -580,7 +423,7 @@ function App() {
                   <div className="text-center pt-6">
                     <button
                       type="submit"
-                      className="submit-btn relative bg-gradient-to-r from-yellow-500 to-orange-500 text-black  px-16 py-6 rounded-2xl text-2xl hover:from-yellow-400 hover:to-orange-400 transition-all duration-300 transform hover:scale-105 shadow-2xl shadow-yellow-500/30 overflow-hidden"
+                      className="relative bg-gradient-to-r from-yellow-500 to-orange-500 text-black  px-16 py-6 rounded-2xl text-2xl hover:from-yellow-400 hover:to-orange-400 transition-all duration-300 transform hover:scale-105 shadow-2xl shadow-yellow-500/30 overflow-hidden"
                     >
                       <span className="relative z-10">Send Message</span>
                       <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
@@ -639,7 +482,7 @@ function App() {
           </footer>
         </div>
       )}
-    </>
+    </footer>
   );
 }
 
