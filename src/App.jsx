@@ -155,7 +155,7 @@ function App() {
                 <h1 className="text-[9rem] leading-none -ml-40">auto</h1>
               </div>
               <img
-                className="absolute character -bottom-[150%] left-1/2 -translate-x-1/2  scale-[3] rotate-[-20deg] h-[600px] w-[400px]"
+                className="absolute character -bottom-[150%] left-1/2  scale-[3] rotate-[-20deg] h-[600px] w-[400px]"
                 src="./girlbg.png"
                 alt=""
               />
@@ -174,11 +174,11 @@ function App() {
               />
             </div>
           </div>
-          <div className="w-full h-[1000px] flex items-center justify-center bg-black">
+          <div className="w-full h-[900px] flex items-center justify-center bg-black">
             <div className="cntnr flex text-white w-full h-[80%] ">
               <div className="limg relative w-1/2 h-full">
                 <img
-                  className="absolute scale-[1.3] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[700px] w-[600px]"
+                  className="absolute scale-[1.3] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[680px] w-[600px]"
                   src="./imag.png"
                   alt=""
                 />
