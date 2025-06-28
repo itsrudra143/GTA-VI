@@ -155,7 +155,7 @@ function App() {
                 <h1 className="text-[9rem] leading-none -ml-40">auto</h1>
               </div>
               <img
-                className="absolute character -bottom-[150%] left-1/2 -translate-x-1/2  scale-[3] rotate-[-20deg]"
+                className="absolute character -bottom-[150%] left-1/2 -translate-x-1/2  scale-[3] rotate-[-20deg] h-[600px] w-[400px]"
                 src="./girlbg.png"
                 alt=""
               />
