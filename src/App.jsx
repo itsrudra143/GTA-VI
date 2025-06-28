@@ -275,7 +275,7 @@ function App() {
                       <h3 className="text-yellow-500 text-4xl mb-4 group-hover:text-yellow-400 transition-colors duration-300">
                         Massive Open World
                       </h3>
-                      <p className="text-gray-300 text-lg leading-relaxed group-hover:text-white transition-colors duration-300">
+                      <p className="text-gray-300 text-lg leading-relaxed group-hover:text-white transition-colors duration-300 font-[Helvetica_Now_Display]">
                         Explore the biggest and most detailed Vice City ever
                         created. From neon-lit streets to sprawling beaches,
                         every corner tells a story of crime and ambition.
@@ -289,14 +289,11 @@ function App() {
                   <div className="w-1/2 pl-12">
                     <div className="relative overflow-hidden rounded-2xl border border-yellow-500/30 group">
                       <img
-                        src="./bg.png"
+                        src="./image2.jpg"
                         alt="Open World"
                         className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                      <div className="absolute top-4 left-4 text-yellow-500 text-5xl">
-                        <i className="ri-map-2-line drop-shadow-lg"></i>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -306,14 +303,11 @@ function App() {
                   <div className="w-1/2 pr-12">
                     <div className="relative overflow-hidden rounded-2xl border border-yellow-500/30 group">
                       <img
-                        src="./girlbg.png"
+                        src="./image3.jpg"
                         alt="Dual Protagonists"
                         className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                      <div className="absolute top-4 right-4 text-yellow-500 text-5xl">
-                        <i className="ri-group-line drop-shadow-lg"></i>
-                      </div>
                     </div>
                   </div>
 
@@ -325,7 +319,7 @@ function App() {
                       <h3 className="text-orange-500 text-4xl mb-4 group-hover:text-orange-400 transition-colors duration-300">
                         Dual Protagonists
                       </h3>
-                      <p className="text-gray-300 text-lg leading-relaxed group-hover:text-white transition-colors duration-300">
+                      <p className="text-gray-300 text-lg leading-relaxed group-hover:text-white transition-colors duration-300 font-[Helvetica_Now_Display]">
                         Play as Lucia and Jason in an epic story of crime, love,
                         and survival in the criminal underworld of Vice City's
                         dangerous streets.
@@ -341,7 +335,7 @@ function App() {
                       <h3 className="text-yellow-500 text-4xl mb-4 group-hover:text-yellow-400 transition-colors duration-300">
                         Enhanced Gameplay
                       </h3>
-                      <p className="text-gray-300 text-lg leading-relaxed group-hover:text-white transition-colors duration-300">
+                      <p className="text-gray-300 text-lg leading-relaxed group-hover:text-white transition-colors duration-300 font-[Helvetica_Now_Display]">
                         Experience next-gen graphics, realistic physics, and
                         dynamic weather systems that bring Vice City to life
                         like never before.
@@ -355,14 +349,11 @@ function App() {
                   <div className="w-1/2 pl-12">
                     <div className="relative overflow-hidden rounded-2xl border border-yellow-500/30 group">
                       <img
-                        src="./sky.png"
+                        src="./image1.jpg"
                         alt="Enhanced Gameplay"
                         className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                      <div className="absolute top-4 left-4 text-yellow-500 text-5xl">
-                        <i className="ri-car-line drop-shadow-lg"></i>
-                      </div>
                     </div>
                   </div>
                 </div>
